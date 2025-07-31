@@ -12,6 +12,7 @@ class Terminal {
             projects: this.showProjects.bind(this),
             skills: this.showSkills.bind(this),
             contact: this.showContact.bind(this),
+            resume: this.showResume.bind(this),
             clear: this.clearTerminal.bind(this),
             ls: this.listDirectory.bind(this),
             whoami: this.whoami.bind(this),
@@ -119,6 +120,7 @@ class Terminal {
 <div class="help-command"><span class="help-command-name">projects</span><span class="help-command-desc">View my projects</span></div>
 <div class="help-command"><span class="help-command-name">skills</span><span class="help-command-desc">View my technical skills</span></div>
 <div class="help-command"><span class="help-command-name">contact</span><span class="help-command-desc">Get my contact information</span></div>
+<div class="help-command"><span class="help-command-name">resume</span><span class="help-command-desc">View/download my resume</span></div>
 <div class="help-command"><span class="help-command-name">clear</span><span class="help-command-desc">Clear the terminal</span></div>
 <div class="help-command"><span class="help-command-name">ls</span><span class="help-command-desc">List directory contents</span></div>
 <div class="help-command"><span class="help-command-name">pwd</span><span class="help-command-desc">Show current directory</span></div>
@@ -137,28 +139,36 @@ class Terminal {
 <span class="success">About Diptendu</span>
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-<span class="info">👨‍💻 Software Developer & AI Enthusiast</span>
+<span class="info">👨‍💻 Computer Science Engineering Student & AI Enthusiast</span>
 
-I'm a passionate software developer with expertise in Machine Learning, Artificial Intelligence, 
-and Full-Stack Development. I love building innovative solutions that solve real-world problems.
+Enthusiastic and motivated third-year B.Tech student with a strong foundation in Computer Science 
+seeking opportunities to apply and enhance skills in programming, mobile app development, data 
+analysis, machine learning and database management. Eager to contribute to innovative projects 
+while gaining practical experience in a professional setting.
+
+<span class="warning">🎓 Education:</span>
+• B.Tech in Computer Science Engineering, KIIT University (2026) - 7.0 CGPA
+• WBHSE - Class XII, Midnapore Collegiate School (2021-2022) - 90%
+• WBSE - Class X, Midnapore Collegiate School (2019-2020) - 90%
 
 <span class="warning">🎯 Current Focus:</span>
 • Machine Learning & Deep Learning
+• Computer Vision & Image Processing
 • Generative AI Applications
 • RAG Systems & LLMs
 • Full-Stack Web Development
-• Data Science & Analytics
+• Data Structures & Algorithms
 
 <span class="warning">🚀 What I Do:</span>
-• Develop ML models for predictive analytics
-• Build AI-powered applications
-• Create intelligent chatbots and RAG systems
+• Develop ML models for image enhancement and predictive analytics
+• Build AI-powered applications and chatbots
+• Create intelligent RAG systems using modern LLMs
 • Design and implement scalable web applications
-• Contribute to open-source projects
+• Work on computer vision projects for medical imaging
 
 <span class="info">💡 Philosophy:</span>
 "Technology should be accessible, innovative, and impactful. I strive to create solutions 
-that not only work well but also make a positive difference."
+that not only work well but also make a positive difference in people's lives."
 
 Type 'projects' to see my work or 'skills' to view my technical expertise.
         `;
@@ -169,6 +179,21 @@ Type 'projects' to see my work or 'skills' to view my technical expertise.
         const projectsText = `
 <span class="success">Featured Projects</span>
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+<div class="project-card">
+    <div class="project-title">👁️ Enhancing Corneal Confocal Images Using Deep Learning</div>
+    <div class="project-description">
+        A computer vision project focused on medical image enhancement using deep learning techniques. 
+        Developed advanced neural networks to improve the quality and clarity of corneal confocal 
+        microscopy images for better medical diagnosis and analysis.
+        
+        <strong>Tech Stack:</strong> Python, TensorFlow/PyTorch, OpenCV, NumPy, Medical Imaging Libraries
+        <strong>Features:</strong> Image enhancement, Noise reduction, Medical image processing, Deep learning models
+    </div>
+    <div class="project-links">
+        <a href="#" class="project-link">🔬 Medical AI Project</a>
+    </div>
+</div>
 
 <div class="project-card">
     <div class="project-title">🌍 CO2 Emission Predictor</div>
@@ -227,13 +252,37 @@ Type 'projects' to see my work or 'skills' to view my technical expertise.
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 <div class="skill-category">
+    <h3>💻 Programming Languages</h3>
+    <div class="skill-list">
+        • C (Proficient)
+        • Java (Proficient)
+        • Python (Advanced)
+        • JavaScript (Proficient)
+        • HTML5, CSS3
+        • SQL (PostgreSQL, MySQL)
+    </div>
+</div>
+
+<div class="skill-category">
+    <h3>🏗️ Data Structures & Algorithms</h3>
+    <div class="skill-list">
+        • Data Structure and Algorithms (DSA)
+        • Object-Oriented Programming (OOP)
+        • Problem Solving & Competitive Programming
+        • Algorithm Design and Analysis
+        • Time & Space Complexity Optimization
+    </div>
+</div>
+
+<div class="skill-category">
     <h3>🤖 Machine Learning & AI</h3>
     <div class="skill-list">
-        • Python, Scikit-learn, TensorFlow, PyTorch
-        • Deep Learning, Neural Networks, CNNs, RNNs
+        • Deep Learning, Neural Networks
+        • Computer Vision & Image Processing
+        • Medical Image Enhancement
+        • TensorFlow, PyTorch, OpenCV
         • Natural Language Processing (NLP)
-        • Computer Vision, OpenCV
-        • MLOps, Model Deployment
+        • Model Training and Evaluation
     </div>
 </div>
 
@@ -243,52 +292,55 @@ Type 'projects' to see my work or 'skills' to view my technical expertise.
         • Large Language Models (LLMs)
         • RAG (Retrieval-Augmented Generation)
         • LangChain, Hugging Face Transformers
-        • OpenAI API, GPT models
-        • Vector Databases (FAISS, Pinecone)
+        • OpenAI API, Phi-2 Model
+        • Vector Databases (FAISS)
+        • Prompt Engineering
     </div>
 </div>
 
 <div class="skill-category">
-    <h3>💻 Programming Languages</h3>
+    <h3>🗄️ Database Management</h3>
     <div class="skill-list">
-        • Python (Advanced)
-        • JavaScript/TypeScript
-        • SQL, NoSQL
-        • HTML5, CSS3
-        • Bash/Shell Scripting
+        • PostgreSQL (Advanced)
+        • MySQL (Advanced)
+        • Database Design & Optimization
+        • Query Optimization
+        • Data Modeling
+        • Database Management Systems
     </div>
 </div>
 
 <div class="skill-category">
     <h3>🌐 Web Development</h3>
     <div class="skill-list">
-        • React.js, Node.js, Express.js
-        • Streamlit, Flask, FastAPI
-        • RESTful APIs, GraphQL
-        • MongoDB, PostgreSQL
-        • Docker, Kubernetes
+        • Frontend: HTML5, CSS3, JavaScript
+        • Backend: Python, Node.js
+        • Frameworks: Streamlit, Flask
+        • RESTful APIs
+        • Responsive Web Design
+        • Version Control (Git, GitHub)
     </div>
 </div>
 
 <div class="skill-category">
-    <h3>📊 Data Science & Analytics</h3>
+    <h3>📊 Data Analysis & Visualization</h3>
     <div class="skill-list">
+        • Strong analytical skills and ability to derive insights from complex data
         • Pandas, NumPy, Matplotlib, Seaborn
-        • Data Preprocessing, Feature Engineering
-        • Statistical Analysis, A/B Testing
+        • Data Preprocessing & Feature Engineering
+        • Statistical Analysis
         • Jupyter Notebooks, Google Colab
-        • Power BI, Tableau
     </div>
 </div>
 
 <div class="skill-category">
     <h3>🛠️ Tools & Technologies</h3>
     <div class="skill-list">
-        • Git, GitHub, GitLab
-        • AWS, Google Cloud Platform
-        • Linux, Ubuntu, Windows
-        • VS Code, PyCharm
-        • Postman, Swagger
+        • Operating Systems: Linux, Windows
+        • IDEs: VS Code, PyCharm, IntelliJ IDEA
+        • Version Control: Git, GitHub
+        • Cloud Platforms: Basic AWS, Google Cloud
+        • Development Tools: Postman, Docker (Basic)
     </div>
 </div>
         `;
@@ -319,6 +371,33 @@ a chat about technology and innovation. Feel free to reach out!
 </div>
         `;
         this.addToOutput(contactText);
+    }
+
+    showResume() {
+        const resumeText = `
+<span class="success">Resume</span>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+<div class="contact-info">
+<span class="info">📄 My Resume is available for download:</span>
+
+<div class="project-links" style="margin-top: 15px;">
+    <a href="Resume 27.pdf" target="_blank" class="project-link">📥 Download Resume (PDF)</a>
+    <a href="Resume 27.pdf" target="_blank" class="project-link">👁️ View Resume</a>
+</div>
+
+<span class="warning">📋 Quick Summary:</span>
+• B.Tech Computer Science Engineering Student at KIIT University
+• CGPA: 7.0/10.0 (Expected Graduation: 2026)
+• Strong foundation in Programming, ML, and Database Management
+• Experience in Deep Learning, Computer Vision, and AI Applications
+• Proficient in C, Java, Python, JavaScript, SQL, and related technologies
+
+<span class="info">💡 The resume contains detailed information about my education, 
+projects, technical skills, and academic achievements.</span>
+</div>
+        `;
+        this.addToOutput(resumeText);
     }
 
     clearTerminal() {
