@@ -1,12 +1,12 @@
 # Diptendu's Terminal Portfolio
-
+**link:[website](https://diptendu.onrender.com)**
 A command-line style portfolio website built with HTML, CSS, and JavaScript. Features an interactive terminal interface that showcases projects, skills, and contact information in a techy, retro-computing aesthetic.
 
-## 🚀 Live Demo
+## Live Demo
 
 Visit the live portfolio: [Your Render URL will be here]
 
-## ✨ Features
+## Features
 
 - **Interactive Terminal Interface**: Navigate using real terminal commands
 - **Command History**: Use arrow keys to navigate through command history
@@ -33,7 +33,7 @@ Visit the live portfolio: [Your Render URL will be here]
 - `echo [text]` - Display text
 - `cat [file]` - Display file contents
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 portfolio_website/
@@ -43,7 +43,7 @@ portfolio_website/
 └── README.md           # This file
 ```
 
-## 🚀 Deployment on Render
+## Deployment on Render
 
 ### Method 1: Connect GitHub Repository
 
@@ -90,7 +90,7 @@ To run locally:
 
 3. Navigate to `http://localhost:8000`
 
-## 🎨 Customization
+## Customization
 
 ### Colors
 The terminal uses a matrix-style color scheme defined in `style.css`:
@@ -113,7 +113,7 @@ To add new commands, edit `script.js`:
 - **Skills**: Modify the `showSkills()` method
 - **Contact**: Update the `showContact()` method
 
-## 📱 Mobile Support
+## Mobile Support
 
 The portfolio is fully responsive and includes:
 - Touch-friendly interface
@@ -121,7 +121,7 @@ The portfolio is fully responsive and includes:
 - Responsive terminal sizing
 - Mobile-friendly project cards
 
-## 🔍 SEO Optimization
+## SEO Optimization
 
 The site includes:
 - Semantic HTML structure
@@ -129,15 +129,15 @@ The site includes:
 - Descriptive page title
 - Clean URL structure
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🤝 Contributing
+## Contributing
 
 Feel free to fork this project and customize it for your own portfolio! If you make improvements, pull requests are welcome.
 
-## 📞 Contact
+## Contact
 
 - **Email**: diptendu@example.com
 - **LinkedIn**: [linkedin.com/in/diptendu](https://linkedin.com/in/diptendu)
