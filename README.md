@@ -1,5 +1,5 @@
 # Diptendu's Terminal Portfolio
-**link:[website](https://diptendu.onrender.com)**
+**link: [website](https://diptendu.onrender.com)**
 A command-line style portfolio website built with HTML, CSS, and JavaScript. Features an interactive terminal interface that showcases projects, skills, and contact information in a techy, retro-computing aesthetic.
 
 ## Live Demo
